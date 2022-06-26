@@ -1,0 +1,103 @@
+/* @import url('https://fonts.googleapis.com/css?family=Oswald:400,700'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins" , sans-serif; */
+    /* font-family: 'Oswald' , sans-serif; */
+    /* font-family: 'Anek Latin', sans-serif; */
+    /* font-family: 'Anek Latin', sans-serif; */
+    font-family: 'Zilla Slab', serif;
+
+
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(aboutbg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card
+{
+    width: 90%;
+    max-width: 440px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 30px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 5);
+    backdrop-filter: blur(5px);
+
+
+}
+.card img
+{
+    /* width: 140px; */
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 5);
+
+}
+.card h2
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px #000;
+
+}
+.card p
+{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+    text-shadow: 2px 2px 2px #000;
+
+}
+.btn
+{
+    text-decoration: none;
+    text-shadow: 1px 1px 2.5px #000;
+    /* font-family: ; */
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgb(215, 103, 238);
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 5);
+    transition: 0.5s;
+
+
+}
+.btn:hover
+{
+    /* font-family: 'Zilla Slab', serif; */
+    letter-spacing: 0.15em;
+    animation: animateColor 1.5s linear infinite;
+}
+
+@keyframes animateColor
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
